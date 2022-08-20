@@ -10,7 +10,7 @@ var usersRouter = require('./app_server/routes/users');
 var routesApi = require('./app_api/routes/index');
 
 var app = express();
-
+const port = process.env.PORT || 5000
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server','views'));
 app.set('view engine', 'pug');
