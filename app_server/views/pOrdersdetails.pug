@@ -1,0 +1,11 @@
+extends layout 
+block content
+    h1 Details About Ride Awaited
+    h2#blink= ""+ messageride
+    br
+    p#p= "From: " + rOrderDetails1.from
+    p#p= "To: " + rOrderDetails1.to
+    p#p= "Date: " + rOrderDetails1.date
+    p#p= "Time: "+ rOrderDetails1.time
+    p#p="Seats Available: " + rOrderDetails1.seatsAvailable
+    p#p= "Price: " + rOrderDetails1.price

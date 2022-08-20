@@ -1,0 +1,55 @@
+extends layout
+
+block content
+  .jumbotron
+    .container
+      h1#h1 Ride
+       span.span Share
+      p Search For Local 
+       span.span Rides.
+      br
+      p
+        a(href='/passengerLogin') 
+          button(type='submit' class= "btn btn-dark") Explore Rides
+        
+        br
+        br
+        a(href='/signup') 
+          button(type='submit' class= "btn btn-dark") SignUp / Login 
+    
+  .container.mt-5.mb-5
+      h1.text-center How to Find Your Ride?
+      .row.mt-5
+        .col-lg-4.mt-2
+          .stepBox
+            h1 1
+            p Search For Ride
+        .col-lg-4.mt-2
+          .stepBox
+            h1 2
+            p Request to Book
+        .col-lg-4.mt-2
+          .stepBox
+            h1 3
+            p Get Confirmation!
+  .container
+    h1 Recent Rides
+    br
+    br
+    .grid1
+      - var count = 0;
+      each x in ridesPost1
+        if count < 6
+          .twoc
+            .aq
+              span.span
+                p= "UserName:"
+              p &nbsp;
+              p=" "+ x.userName 					
+            p= "From: " + x.from 
+            p= "To: " + x.to 
+            p= "Date: " + x.date 
+            p= "Time: "+ x.time
+            p="Seats Available: " + x.seatsAvailable 
+            p= "Price: " + x.price
+        - count++;  

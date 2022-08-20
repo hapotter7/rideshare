@@ -1,0 +1,31 @@
+extends dashboardLayout
+block content
+    h1 Profile Details
+    br
+    br
+    br
+    each x in passengerProfile.photo
+        img#imgprofile(src='../uploads/'+x.file height='300px' width='300px')
+    br
+    each x in passengerProfile.details
+        table#table1
+            tr   
+                td Name 
+                td= x.name
+            tr   
+                td Email Address  
+                td= x.email
+            tr   
+                td Contact Number  
+                td= x.contact
+            tr   
+                td Street Address  
+                td= x.stAddress
+            tr   
+                td City  
+                td= x.city
+            tr   
+                td Government ID  
+                td= x.govId
+    br
+    

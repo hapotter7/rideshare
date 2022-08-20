@@ -1,0 +1,17 @@
+extends layout 
+block content
+    h1 Rides Awaiting for your Confirmation
+        br
+        br
+        table#asd
+            tr 
+                th Passenger Name
+                th Click Below to Confirm/Decline
+                th Status
+            each x in rOrderDetails
+                tr
+                    td= ""+ x.passengerUserName
+                    td
+                        a(href=`/${x._id}/details/${x.riderUserName}/${x.postId}`) #{x.postId}
+                    td= ""+ x.status
+            

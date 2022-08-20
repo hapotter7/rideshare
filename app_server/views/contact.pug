@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    br
+    br
+    .c123
+        form(action='' method='post')
+            h1 We'd Love to Hear from You!
+            label(for='name')
+            input#name(type='text' name='name' placeholder="Name")
+            br
+            label(for='phone number')
+            br
+            input#phoneNumber(type='text' name='phoneNumber' placeholder="Contact Number")
+            br
+            br
+            label(for='message')
+            br
+            textarea#freeform(name='freeform', rows='4', cols='43' placeholder="Message")
+            br
+            br
+            button(type='submit' value='submit' class= "btn btn-dark") Submit

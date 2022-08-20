@@ -1,0 +1,16 @@
+extends dashboardLayout
+
+block content
+    h1 Ride Details
+    br
+    br
+    .twoc
+        p1= "UserName: " + rideInfo.userName
+        p= "From: " + rideInfo.from
+        p= "To: " + rideInfo.to
+        p= "Date: " + rideInfo.date
+        p= "Time: "+ rideInfo.time
+        p="Seats Available: " + rideInfo.seatsAvailable
+        p= "Price: " + rideInfo.price
+        a(href=`/${pUser}/bookRide/${rideInfo.userName}/${rideInfo._id}`)
+            button(type='submit' class='btn btn-dark') Book 

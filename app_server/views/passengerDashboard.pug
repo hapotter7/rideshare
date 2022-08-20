@@ -1,0 +1,17 @@
+extends dashboardLayout
+
+block content
+	h1="Welcome  " + passengerDetailsAll.userName
+	br
+	br
+	.c12
+		a(href=`/passengerprofile/${passengerDetailsAll.userName}`)
+			button(type='submit' class='my-button') Profile
+			br
+			br
+		a(href=`/createnewrideRequest/${passengerDetailsAll.userName}`)
+			button(type='submit' class='my-button') Check Ride Status
+			br
+			br
+		a(href=`/${passengerDetailsAll.userName}/ridePost`)
+			button(type='submit' class= "my-button") Explore Rides

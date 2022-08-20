@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	h1 Rides Available
+	br
+	br
+	.grid
+		each x in ridesPost
+			a(href=`/${pUser}/bookRide/${x._id}`)
+				.twoc
+					p= "UserName: " + x.userName 					
+					p= "From: " + x.from 
+					p= "To: " + x.to 
+					p= "Date: " + x.date 
+					p= "Time: "+ x.time															
+					p="Seats Available: " + x.seatsAvailable 
+					p= "Price: " + x.price

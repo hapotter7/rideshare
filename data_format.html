@@ -1,0 +1,29 @@
+
+var mainSchema = new mongoose.Schema({
+
+    categoryName: 'Beverages'
+    items:[{
+         name: "Latte",
+    price: 7,
+    calories: 20,
+    description: "Steamed milk on top of expresso shots",
+    reviews:[{
+        name: "Ankit"
+        reviewText: "Best",
+        star:5
+    }]
+    }]
+    
+   
+});
+
+{
+    name: 'Ankit',
+    phoneNumber: 6472360684,
+    email: 'ankittayal199@gmail.com',
+    orderItems:[{
+        itemName: 'Fries',
+        amount: 12
+    }]
+
+}

@@ -1,0 +1,34 @@
+extends dashboardLayout
+block content
+    h1 Profile Details
+    br
+    br
+    br
+    each x in riderProfile.photo
+        img#imgprofile(src='../uploads/'+x.file height='300px' width='300px')
+    br
+    each x in riderProfile.details
+        table#table1
+            tr   
+                td Email Address  
+                td= x.email
+            tr   
+                td Contact Number  
+                td= x.contact
+            tr   
+                td Driving License  
+                td= x.dl_id
+            tr   
+                td Street Address  
+                td= x.stAddress
+            tr   
+                td City  
+                td= x.city
+            tr   
+                td Vehicle  
+                td= x.vehicle
+            tr   
+                td Vehicle Number  
+                td=x.vehicleNumber
+    br
+    

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1 Rides Requested
+	br
+	br 
+	ul 
+		each x in ridesPost
+			a(href=`/menu/${x._id}`)
+				li= "UserName: " + x.userName
+				br  
+				p= "From: " + x.from 
+				p= "To: " + x.to 
+				p= "Date: " + x.date 
+				p= "Time: "+ x.time 
+				p="Seats Required: " + x.seatsRequired 
+			br
+			br 

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    br
+    br
+    .c123
+        form(action='' method='post')
+            h1 Passenger Account Login
+            label(for='userName') Username
+            br
+            input#userName(type='text' name='userName' required)
+            br
+            label(for='password') Password
+            br
+            input#password(type='password' name='password' required)
+            br
+            br
+            button(type='submit' class='btn btn-dark') Login
+            br
+            br
+    a(href='/passengerSignUp')
+      button(type='submit' class='btn btn-dark') Create Account    

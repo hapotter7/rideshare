@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    br
+    br
+    .c123
+        form(action='' method='post' enctype="multipart/form-data")
+            h1 Create New Rider Account
+            label(for='userName')
+            input#userName(type='text' name='userName' placeholder='Username' required)
+            br
+            br
+            label(for='password')
+            input#password(type='password' name='password' placeholder='Password' required)
+            br
+            br
+            label(for='name')
+            input#name(type='text' name='name' placeholder='Name' required)
+            br
+            br
+            label(for='contact')
+            input#contact(type='text' name='contact' placeholder='Contact' required)
+            br
+            br
+            label(for='email') &nbsp;
+            input#email(type='text' name='email' placeholder='Email' required)
+            label(for='dl_id')
+            input#dl_id(type='text', name='dl_id' placeholder='DL No.' required)
+            br
+            br
+            label(for='stAddress')
+            input#stAddress(type='text' name='stAddress' placeholder='Address' required)
+            br
+            br
+            label(for='city') 
+            input#city(type='text' name='city' placeholder='City' required)
+            br
+            br
+            label(for='vehicle')  
+            input#vehicle(type='text', name='vehicle' placeholder='Vehicle' required)
+            label(for='vehicleNumber') 
+            input#vehicleNumber(type='text', name='vehicleNumber' placeholder='Vehicle No' required)
+            br
+            br
+            label(for='file') Profile Picture
+            br
+            input#file(type='file', name='file' placeholder='Profile Picture' required)
+            br
+            br
+            input(type='submit' value='Create Account' class= "btn btn-dark")

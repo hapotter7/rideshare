@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    br
+    br
+    .c123
+        form(action='' method='post')
+            h1 Post Ride
+            label(for='from') 
+            br
+            input#from(type='text' name='from' placeholder='From' )
+            br
+
+            label(for='to')
+            br
+            input#to(type='text' name='to' placeholder='To')
+            br
+
+            label(for='date') 
+            br
+            input#date(type='text' name='date' placeholder='Date')
+            br
+            label(for='time')
+            br
+            input#time(type='text' name='time' placeholder='Time')
+            br
+            label(for='seatsAvailable')
+            br
+            input#seatsAvailable(type='text', name='seatsAvailable' placeholder='Seats Available')
+            br
+            label(for='price')
+            br
+            input#price(type='text', name='price' placeholder='Price')
+            br
+            br
+            input(type='submit' value='Post Ride' class= "btn btn-dark")

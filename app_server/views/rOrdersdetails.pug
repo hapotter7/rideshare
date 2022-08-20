@@ -1,0 +1,18 @@
+extends layout 
+block content
+    h1 Details About Ride Awaited
+    .twoc
+        p= "From: " + rOrderDetails1.from
+        p= "To: " + rOrderDetails1.to
+        p= "Date: " + rOrderDetails1.date
+        p= "Time: "+ rOrderDetails1.time
+        p="Seats Available: " + rOrderDetails1.seatsAvailable
+        p= "Price: " + rOrderDetails1.price
+        br
+        br
+        a(href=`/${_id}/details1/${userName}/${postId}`)
+            button(type='submit' value='submit' class= "btn btn-dark") Confirm
+        br
+        br    
+        a(href=`/${_id}/details2/${userName}/${postId}`)
+            button(type='submit' value='submit' class= "btn btn-dark") Decline 

@@ -1,0 +1,18 @@
+extends dashboardLayout
+
+block content
+	h1="Welcome  " + riderDetailsAll.userName
+	br
+	br
+	.c12
+		a(href=`/riderprofile/${riderDetailsAll.userName}`)
+			button(type='submit' class='my-button') Profile
+			br
+			br
+		a(href=`/createnewridepost/${riderDetailsAll.userName}`)
+			button(type='submit' class='my-button') Post New Ride
+			br
+			br
+		a(href=`/${riderDetailsAll.userName}/rOrders`)
+			button(type='submit' class='my-button') Get Orders
+		
